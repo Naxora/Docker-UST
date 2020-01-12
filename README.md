@@ -13,6 +13,9 @@ Create two folder in /mnt
 
 In Dockerfile change YOURSMBPWD to your samba password
 
+Transmission settings file: settings.json
+Samba config file: smb.conf
+
 ------------
 
 
