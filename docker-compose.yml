@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+ usamba:
+  tty: yes
+  build:
+   context: .
+   dockerfile: Dockerfile
+  container_name : UbuntuSambaTransmission
+
+  volumes:
+    # Samba
+    - ./smb.conf:/etc/samba/smb.conf
+    - /mnt/SharedFolder:/mnt/SharedFolder
+    - ./supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+
+    # Transmission
+    - ./settings.json:/var/lib/transmission-daemon/info/settings.json
+
+  ports:
+    # Samba port forwarding
+    - "137:137/udp"
+    - "138:138/udp"
+    - "139:139/tcp"
+    - "445:445/tcp"
+
+    # Transmission
+    - "9091:9091"
+    
+    # Supervisord
+    - "9001:9001"
