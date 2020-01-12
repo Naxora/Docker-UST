@@ -11,7 +11,9 @@ Create two folder in /mnt
 - SharedFolder
 - Torrents
 
-In Dockerfile change YOURSMBPWD to your samba password
+In Dockerfile change YOURSMBPWD to your samba password.
+
+In this config your user is root.
 
 Transmission settings file: settings.json
 
