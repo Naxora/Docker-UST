@@ -7,7 +7,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y samba nano transmission-daemon supervisor
 
 # Set password
-RUN (echo qwe; echo qwe) | smbpasswd -sa root && \
+RUN (echo YOURSMBPWD; echo YOURSMBPWD) | smbpasswd -sa root && \
   # Stop Samba
   service smbd stop
 
