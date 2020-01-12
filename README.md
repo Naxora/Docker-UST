@@ -11,6 +11,8 @@ Create two folder in /mnt
 - SharedFolder
 - Torrents
 
+In Dockerfile change YOURSMBPWD to your samba password
+
 ------------
 
 
