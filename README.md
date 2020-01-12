@@ -7,7 +7,7 @@ To do:
 - Install ubuntu
 - install docker
 
-Create two folder in /mnt
+Create two folder in /mnt in your Ubuntu Server
 - SharedFolder
 - Torrents
 
