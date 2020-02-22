@@ -7,9 +7,11 @@ To do:
 - Install ubuntu
 - install docker
 
-Create two folder in /mnt in your Ubuntu Server
+Create one folder into /mnt in your Ubuntu Server
 - SharedFolder
-- Torrents
+
+And create another folder into SharedFolder:
+ - Torrents
 
 In Dockerfile change YOURSMBPWD to your samba password.
 
