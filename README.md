@@ -5,7 +5,7 @@ Using minimal Ubuntu Samba and Transmission.
 
 To do:
 - Install ubuntu
-- install docker & docker-composer
+- install docker & docker-compose
 
 Create one folder into /mnt in your Ubuntu Server
 - SharedFolder
