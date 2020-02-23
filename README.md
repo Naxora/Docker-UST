@@ -5,7 +5,7 @@ Using minimal Ubuntu Samba and Transmission.
 
 To do:
 - Install ubuntu
-- install docker
+- install docker & docker-composer
 
 Create one folder into /mnt in your Ubuntu Server
 - SharedFolder
@@ -17,9 +17,15 @@ In Dockerfile change YOURSMBPWD to your samba password.
 
 In this config your user is root.
 
+
+
+Other settings files:
+
 Transmission settings file: settings.json
 
 Samba config file: smb.conf
+
+Supervisord config file: supervisord.conf
 
 ------------
 
